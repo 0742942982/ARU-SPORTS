@@ -1,0 +1,103 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Top Navigation */
+  .topnav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    overflow: hidden;
+    height: 62px;
+    background-color: #255760;
+  }
+  .topnav-left{
+    float: left;
+    display: inline;
+    
+  }
+  .topnav-left img{
+    height: 65px;
+    float: left;
+  }
+  .topnav-left h2{
+    float: left;
+    color: aliceblue;
+    font-size: 25px;
+    font-weight: 900;
+    padding-left: 11px;
+   padding-top: 23px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  /* Logo Styles */
+  .card-logo-left {
+    background-position: center;
+    padding-left: 20px;
+    height: 110%;
+  }
+  
+ 
+  
+  /* Top Navigation Right Alignment */
+  .topnav-right {
+    float: right;
+    margin-right: 20px; /* Adjust as necessary */
+    line-height: 62px; /* Center vertically */
+  }
+  
+  /* Top Navigation Links */
+  .topnav-right a {
+    float: left; /* Adjust if necessary */
+    color: #f2f2f2;
+    text-align: center;
+    line-height: 40px;
+    padding: 20px 16px 10px; /* Adjust as necessary */
+    font-style: normal;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  .topnav-right a:hover {
+    background-color: #206470;
+    cursor: pointer;
+  }
+  
+  /* Classic Section */
+ 
+  
+  /* Head Styles */
+  .head {
+    text-align: center;
+  }
+  
+  .head h2 {
+    color: #f2f2f2;
+    font-size: 45px;
+    margin-bottom: 20px; /* Adjust as necessary */
+  }
+  
+  .head_one {
+    font-size: 30px;
+    color: orange;
+  }
+  
+  /* Container */
+  .container {
+    margin-top: 20px; /* Adjust as necessary */
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .container h2 {
+    font-size: 40px;
+    text-align: center;
+  }
+  

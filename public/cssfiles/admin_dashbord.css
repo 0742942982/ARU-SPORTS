@@ -1,0 +1,120 @@
+/* General Styles */
+* {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background: #f5fbfa;
+}
+
+/* Sidebar Styles */
+.wrapper .sidebar {
+    background: purple;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+    left: 0;
+    width: 228px;
+    height: 100%;
+    padding: 20px 0;
+    transition: all 0.5s ease;
+}
+
+.wrapper .sidebar .profile {
+      text-align: center;
+}
+
+.wrapper .sidebar .profile img {
+    display: flex;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+ 
+}
+
+
+
+.wrapper .sidebar .profile h3 {
+    color: #ffffff;
+    
+}
+.wrapper .sidebar .profile p {
+    color: rgb(206, 204, 253);
+    font-size: 14px;
+}
+
+.wrapper .sidebar ul li a {
+    display: block;
+    text-align: left;
+    padding: 10px 3px;
+    border-bottom: 1px solid purple;
+    color: rgb(241, 237, 239);
+    font-size: 13.5px;
+    position: relative;
+}
+
+.wrapper .sidebar ul li a .icon {
+    color: #fbf6f9;
+    width: 30px;
+    display: inline-block;
+    padding: auto;
+}
+
+/* Link Hover */
+.wrapper .sidebar ul li a:hover,
+.wrapper .sidebar ul li a.active {
+    color: #ede3e9;
+    background: rgb(232, 9, 217);
+    border-right: 2px solid rgb(5, 68, 104);
+}
+
+.wrapper .sidebar ul li a:hover .icon,
+.wrapper .sidebar ul li a.active .icon {
+    color: white;
+}
+
+.wrapper .sidebar ul li a:hover::before,
+.wrapper .sidebar ul li a.active::before {
+    display: block;
+}
+
+/* Section Styles */
+.wrapper .section {
+    width: calc(100% - 225px);
+    margin-left: 225px;
+    transition: all 0.5s ease;
+}
+
+.wrapper .section .top-navbar {
+    background-color: rgb(25, 15, 25);
+    height: 50px;
+    display: flex;
+   
+    align-items: center;
+    padding: 0 40px;
+}
+
+.wrapper .section .top-navbar .hamburger a {
+    font-size: 28px;
+    color: #f4fbff;
+    float: left;
+}
+
+.wrapper .section .top-navbar .hamburger a:hover {
+    color: #a3ecff;
+}
+
+/* Active State */
+body.active .wrapper .sidebar {
+    left: -225px;
+}
+
+body.active .wrapper .section {
+    margin-left: 0;
+    width: 100%;
+}
